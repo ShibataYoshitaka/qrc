@@ -1,0 +1,8 @@
+<% @add.each do |ad| %>
+  <%= qrcode_tag ad.address %><br/>
+  <%= ad.address %> -- 
+  <%= link_to '削除', qr_path(ad), method: :delete %><br/>
+<hr>
+<% end %>
+<br/>
+<%= link_to 'addressの追加', new_qr_path %>

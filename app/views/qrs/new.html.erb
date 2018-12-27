@@ -1,0 +1,7 @@
+<%= form_for @add, url: qrs_path, address: {action: :create} do |ad| %>
+
+<%= ad.label :address, 'address:' %><br/>
+<%= ad.text_field :address %><br/>
+<%= ad.submit '登録' %>
+
+<% end %>
